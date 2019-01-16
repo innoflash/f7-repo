@@ -1,0 +1,68 @@
+{{#if this}}
+    <div class="row no-gutter">
+        <div class="col-25"></div>
+        <div class="col-50 tablet-100">
+            <br/>
+            <img class="full-width-image profile-pic lazyload" alt="profile photo" src="img/logo.png" data-src="{{ photoURL }}" id="user_image">
+        </div>
+        <div class="col-25"></div>
+    </div>
+    <div class="block-title">
+        Profile Details
+    </div>
+    <div class="list inset">
+        <ul>
+            <li>
+                <a href="#" class="item-link item-content">
+                    <div class="item-media"><i class="f7-icons">person</i></div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            <div class="item-header">First Name</div>
+                            <b>
+                                {{ name }}
+                            </b>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="item-link item-content">
+                    <div class="item-media"><i class="f7-icons">person</i></div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            <div class="item-header">Last Name</div>
+                            <b>
+                                {{ id }}
+                            </b>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="item-link item-content">
+                    <div class="item-media"><i class="f7-icons">person</i></div>
+                    <div class="item-inner">
+                        <div class="item-title">
+                            <div class="item-header">Age</div>
+                            <b>
+                                {{ auth }}
+                            </b>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <br/>
+    <div class="block" id="logOut">
+        <div class="row">
+            <div class="col "></div>
+            <button class="col button button-fill" id="refreshSermons">
+                Logout
+            </button>
+            <div class="col "></div>
+        </div>
+        <br/>
+        <br/>
+    </div>
+{{/if}}

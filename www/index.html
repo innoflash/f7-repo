@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#0074BD">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="lib/f7/css/framework7.min.css"/>
+  <link rel="stylesheet" href="css/f7.welcomescreen.css"/>
+  <link rel="stylesheet" href="css/f7.upscroller.css"/>
+  <link rel="stylesheet" href="css/framework7.3dpanels.min.css"/>
+  <link rel="stylesheet" href="css/f7-icons.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+</head>
+<body>
+  <div id="app">
+    <div class="statusbar"></div>
+    <div class="panel panel-left panel-reveal">
+      <div class="page">
+        <div class="page-content">
+          <div class="profile-image-container" style="padding-bottom: 10px;">
+            <img id="user_image" src="img/logo.png" alt="user" class="profile-image lazy lazy-fade-in"/>
+
+            <p align="center" id='username' style="margin: 0px;">
+              HisWord
+            </p>
+          </div>
+          <div class="block-title">Main Navigation</div>
+          <div class="list links-list">
+            <ul>
+              <li>
+                <a href="/home" class="panel-close">
+                  <div class="item-media">
+                    <i class="icon fa fa-home"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">
+                    Home
+                    </div>
+                    <div class="item-after">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/channels" class="panel-close">
+                  <div class="item-media">
+                    <i class="icon fa fa-heart-o"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">
+                    Add channels
+                    </div>
+                    <div class="item-after">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="item-divider"></li>
+              <li>
+                <a href="/reviews" class="panel-close">
+                  <div class="item-media">
+                    <i class="icon fa fa-edit"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">
+                    Reviews
+                    </div>
+                    <div class="item-after">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="panel-close">
+                  <div class="item-media">
+                    <i class="icon fa fa-share-alt"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">
+                    Invite Others
+                    </div>
+                    <div class="item-after">
+                      <span class="badge color-green">share</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/contact-us" class="panel-close">
+                  <div class="item-media">
+                    <i class="icon fa fa-phone"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">
+                    Contact
+                    </div>
+                    <div class="item-after">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/about-us" class="panel-close">
+                  <div class="item-media">
+                    <i class="icon fa fa-info-circle"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">
+                    About us
+                    </div>
+                    <div class="item-after">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="panel-close">
+                  <div class="item-media">
+                    <i class="icon fa fa-info"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">
+                    Tutorial
+                    </div>
+                    <div class="item-after">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="item-divider"></li>
+              <li>
+                <a href="/settings" class="panel-close">
+                  <div class="item-media">
+                    <i class="icon fa fa-cog"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">
+                    Settings
+                    </div>
+                    <div class="item-after">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/profile" class="panel-close">
+                  <div class="item-media">
+                    <i class="icon fa fa-user"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">
+                    Profile
+                    </div>
+                    <div class="item-after">
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="view view-main view-init ios-edges" data-url="/">
+      <div class="page" data-name="index">
+        <div class="navbar">
+          <div class="navbar-inner r8em-navbar">
+            <div class="right">
+              <a href="#" class="link icon-only panel-open" data-panel="left">
+                <i class="icon f7-icons ios-only">menu</i>
+                <i class="icon material-icons md-only">menu</i>
+              </a>
+            </div>
+            <div class="title sliding">HIS WORD</div>
+          </div>
+        </div>
+        <div class="toolbar tabbar tabbar-labels">
+          <div class="toolbar-inner">
+            <a href="#messagesTab" class="tab-link">
+              <i class="icon f7-icons" id="messagesIcon">chat</i>
+              <span class="tabbar-label">Messages</span>
+            </a>
+            <a href="#sermonsTab" class="tab-link tab-link-active">
+              <i class="icon icon-fill f7-icons" id="sermonsIcon">home</i>
+              <span class="tabbar-label">
+                Sermons
+              </span>
+            </a>
+            <a href="#channelsTab" class="tab-link">
+              <i class="icon f7-icons">heart</i>
+              <span class="tabbar-label">Channels</span>
+            </a>
+          </div>
+        </div>
+        <div class="tabs-animated-wrap">
+          <div class="tabs">
+            <div id="sermonsTab" class="page-content tab tab-active">
+              <div class="block">
+                <p id="sermonsStatus">
+                  ...
+                </p>
+                <div class="block" id="sermonsRefreshButton">
+                  <div class="row">
+                    <div class="col "></div>
+                    <button class="col button button-fill" id="refreshSermons">
+                      Refresh
+                    </button>
+                    <div class="col "></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="messagesTab" class="page-content tab">
+              <div class="block">
+                <p id="messagesStatus">
+                  ...
+                </p>
+                <div class="block" id="messagesRefreshButton">
+                  <div class="row">
+                    <div class="col "></div>
+                    <button class="col button button-fill" id="refreshMessages">
+                      Refresh
+                    </button>
+                    <div class="col "></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="channelsTab" class="page-content tab">
+              <div class="block">
+                <p id="channelsStatus">
+                  ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-content">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup-report">
+        <div class="content-block">
+            <div data-page="login" class="page">
+              <div class="toolbar">
+                    <div class="toolbar-inner">
+                        <div class="left">Reviews</div>
+                        <div class="right"><a class="link popup-close" data-popup=".popup-report"
+                                              href="#">Close</a></div>
+                    </div>
+                </div>
+                <div class="page-content login-screen-content">
+                    <div class="blur-landing"></div>
+                    <img src="img/login-logo.png" class="center-img" alt="">
+
+                    <div class="login-screen-title" id="reportTitle">Report</div>
+
+                    <div class="block-strong inset">
+                        <div class="list no-hairlines-md">
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-media">
+                                        <i class="icon f7-icons">
+                                            chats
+                                        </i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title item-floating-label">Review</div>
+                                        <div class="item-input-wrap">
+                                            <textarea class="resizable"
+                                                      placeholder="Your review"
+                                                      id="myReview"></textarea>
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25"></div>
+                        <div class="col-50">
+                            <button class="button button-fill button-big display-block color-green"
+                                    id="sendReview">
+                                SEND REVIEW
+                            </button>
+                        </div>
+
+                        <div class="col-25"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- report screen -->
+
+  <script src="js/config.js"></script>
+  <script src="cordova.js"></script>
+  <script src="lib/lodash.js"></script>
+  <script src="lib/jQuery-3.3.1.min.js"></script>
+  <script src="lib/js.cookie.js"></script>
+  <script src="lib/lazyload.min.js"></script>
+  <script src="js/DatabaseHandler.js"></script>
+  <script src="lib/f7/js/framework7.min.js"></script>
+  <!-- <script src="lib/f7.welcomescreen.js"></script>
+  <script src="lib/f7.upscroller.js"></script> -->
+  <script src="lib/framework7.3dpanels.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script data-main="app" src="lib/require.js"></script>
+</body>
+</html>
